@@ -2,6 +2,8 @@ const express = require('express');
 
 const path = require('path');
 
+const open = require('open');
+
 const app = express();
 
 app.use(express.static(path.join(__dirname,'agro')));
@@ -28,5 +30,6 @@ for (const name of Object.keys(nets)) {
 
 
 app.listen(80,function(req,res){
+    open('http://'+results['Local Area Connection'][0]);
     console.log('Server Starts in','http://'+results['Local Area Connection'][0]);
 });
