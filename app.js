@@ -12,6 +12,10 @@ app.get('/',function(req,res){
     res.sendFile(path.join(__dirname,'agro/index.html'));
 })
 
+app.get('/app',function(req,res){
+    res.sendFile(path.join(__dirname,'app/index.html'));
+})
+
 
 const { networkInterfaces } = require('os');
 const nets = networkInterfaces();
