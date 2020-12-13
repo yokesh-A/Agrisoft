@@ -19,6 +19,12 @@ app.get('/app',function(req,res){
 app.get('/gallery',function(req,res){
     res.sendFile(path.join(__dirname,'app/gallery.html'));
 })
+app.get('/desvid',function(req,res){
+    res.sendFile(path.join(__dirname,'app/project1.html'));
+})
+app.get('/desimg',function(req,res){
+    res.sendFile(path.join(__dirname,'app/project.html'));
+})
 
 
 const { networkInterfaces } = require('os');
