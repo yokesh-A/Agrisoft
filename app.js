@@ -16,6 +16,10 @@ app.get('/app',function(req,res){
     res.sendFile(path.join(__dirname,'app/index.html'));
 })
 
+app.get('/gallery',function(req,res){
+    res.sendFile(path.join(__dirname,'app/gallery.html'));
+})
+
 
 const { networkInterfaces } = require('os');
 const nets = networkInterfaces();
