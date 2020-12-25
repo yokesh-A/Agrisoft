@@ -450,6 +450,15 @@ $(document).ready(function() {
       itemsTablet: [600,1], 
       itemsMobile : false 
   });
+
+  $("#blog1").owlCarousel({
+    navigation : true,
+      items : 3,
+      itemsDesktop : [1000,2], 
+      itemsDesktopSmall : [900,2],
+      itemsTablet: [600,1], 
+      itemsMobile : false 
+  });
  
 });	
 	
